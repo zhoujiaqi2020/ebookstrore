@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588088938230&di=9feca2be6f5a89809da1352fcfdb19d8&imgtype=0&src=http%3A%2F%2Fwww.pptbz.com%2Fpptpic%2FUploadFiles_6909%2F201406%2F2014061007022710.jpg");
+            animation-name:myfirst;
+            animation-duration:12s;
+            /*变换时间*/
+            animation-delay:2s;
+            /*动画开始时间*/
+            animation-iteration-count:infinite;
+            /*下一周期循环播放*/
+            animation-play-state:running;
+            /*动画开始运行*/
+        }
+        @keyframes myfirst
+        {
+            /*0%   {background:url("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=263126125,3096915343&fm=26&gp=0.jpg");}*/
+
+            /*100% {background:url("https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3564208206,1324697812&fm=26&gp=0.jpg");}*/
+        }
+        .form{background: rgba(255,255,255,0.2);width:400px;margin:120px auto;}
+        /*阴影*/
+        .fa{display: inline-block;top: 27px;left: 6px;position: relative;color: #ccc;}
+        input[type="text"],input[type="password"]{padding-left:26px;}
+        .checkbox{padding-left:21px;}
+
+    </style>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="form row">
+        <div class="form-horizontal col-md-offset-3" id="login_form">
+            <h3 class="form-title">请输入邮箱</h3>
+            <div class="col-md-9">
+                <div class="form-group">
+                    <i class="fa fa-envelope  fa-lg"></i>
+                    <input class="form-control required" type="text" placeholder="邮箱" id="username" name="username" autofocus="autofocus" maxlength="20"/>
+                </div>
+                <div class="form-group">
+                    <i class="fa fa-lock fa-lg"></i>
+                    <input class="form-control required" type="password" placeholder="验证码" id="password" name="password" maxlength="8" style="width: 160px;"/>
+                </div>
+
+                <div class="form-group col-md-offset-9">
+                    <button type="submit" class="btn btn-danger pull-right" name="submit" style="margin-right: -5px;margin-top: -48px;">验证码</button>
+                    <button type="submit" class="btn btn-success pull-right" name="submit" style="margin-right: -5px; width: 230px;margin-top: 15px;" >登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
